@@ -6,4 +6,5 @@ RUN curl -O https://releases.hashicorp.com/vault/1.3.0/vault_1.3.0_linux_amd64.z
 RUN apt-get install unzip
 RUN unzip vault_1.3.0_linux_amd64.zip
 RUN mv vault /usr/local/bin
+USER circleci
 
